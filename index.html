@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal show" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Payment form example</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                    <div>
+                        <form action="" method="post">
+                            <div>
+                                <label for="card">Card #</label>
+                                <input type="number" id="card" name="Tarjeta" placeholder="XXXXXXXXXXXXXXXX">
+                            </div>
+                            <div>
+                                <label for="digitos">CVC #</label>
+                                <input type="number" id="digitos" name="codigo" placeholder="0000">
+                            </div>
+                            <div>
+                                <label for="cantidad">Amount</label>
+                                <input type="number" id="cantidad" name="cantidad" placeholder="Amount">
+                            </div>
+                            <div>
+                                <label for="n-pila">First Name</label>
+                                <input type="text" id="n-pila">
+                            </div>
+                            <div>
+                                <label for=apellido">Last Name</label>
+                                <input type="text" id="apellido">
+                            </div>
+                            <div>
+                                <label for="ciudad">City</label>
+                                <input type="text" id="ciudad">
+                            </div>
+                            <div>
+                                <label for="estado>State</label>
+                                <input type="text" id="estado">
+                            </div>
+                            <div>
+                                <label for="codigo">Postal Code</label>
+                                <input type="number" id="codigo">
+                            </div>
+                            <div>
+                                <label for="tipos-t">We accept:</label>
+                                <input type="checkbox" id="tipos-t">
+                                <button type="button" class="btn btn-secondary">Secondary</button>
+                            </div>
+                            <div>
+                                <label for="mensaje" class="form-label my-2 mx-2">Message</label>
+                                <textarea name="mensaje" id="mensaje"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+
+</html>
